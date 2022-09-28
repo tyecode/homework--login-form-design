@@ -13,7 +13,7 @@ const paths = {
         dest: 'dist'
     },
     script: {
-        src: 'src/js/**/*.js',
+        src: 'src/*.js',
         dest: 'dist'
     }
 }

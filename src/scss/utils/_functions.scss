@@ -1,0 +1,10 @@
+@function rem($value) {
+    $remValue: calc($value / 16) + rem;
+    @return $remValue;
+}
+
+@function em($value) {
+    $emValue: calc($value / 16) + em;
+    @return $emValue;
+}
+

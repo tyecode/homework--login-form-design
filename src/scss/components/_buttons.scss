@@ -1,0 +1,19 @@
+@use '../utils' as *;
+
+form {
+    
+    button {
+        width: rem(120);
+        height: rem(42);
+        border: none;
+        background-color: $primary;
+        border-radius: rem(5);
+        cursor: pointer;
+        transition: .3s all ease-in-out;
+        margin-top: rem(20);
+    }
+
+    button:hover {
+        background-color: $secondary;
+    }
+}

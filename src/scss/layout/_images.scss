@@ -1,0 +1,36 @@
+@use '../utils' as *;
+
+.form {
+
+    &__img {
+        display: block;
+        position: relative;
+        width: 50%;
+        height: 100%;
+        border-top-left-radius: rem(20);
+        border-bottom-left-radius: rem(20);
+        overflow: hidden;
+
+        @include breakpoint-down(xlarge) {
+            width: 40%;
+        }
+
+        @include breakpoint-down(large) {
+            width: 30%;
+        }
+
+        @include breakpoint-down(medium) {
+            display: none;
+        }
+    
+        img {
+            height: 100%;
+        }
+    
+        .wave {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}

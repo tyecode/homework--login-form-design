@@ -4,11 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Gulp Project</title>
+    <title>Homework | Sengphachanh Chanthavong - Login form design</title>
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
-    <h1>Gulp Project</h1>
+    
+    <div class="form">
+        <div class="form__img">
+            <img src="./src/images/form-img.jpg" alt="form-image">
+            <img class="wave" src="./src/images/wave.png">
+        </div>
+
+        <!-- Sign-in form -->
+
+        <div class="form__signin">
+            <div class="form-wrapper">
+                <h1 class="display-1">Hello there, <br> welcome back</h1>
+
+                <form action="">
+                    <input class="input" type="email" id="email" name="email" placeholder="Email" required>
+                    <input class="input" type="password" id="password" name="password" placeholder="Password" required>
+                    <div class="remember-password">
+                        <div class="remember-me">
+                            <input class="checkbox" type="checkbox" name="remember-me" value="remember">
+                            <h3 class="display-3">Remember me</h3>
+                        </div>
+                        <div class="display-3 forget-password"><a href="#">Forgot your Password?</a></div>
+                    </div>
+                    <button class="btn-signin" type="submit">Sign in</button>
+                </form>
+            </div>
+         
+            <h3 class="display-3">New here? <a class="to-signup" href="#">Sign Up instead</a></h3>
+        </div>
+
+        <!-- Sign-up form -->
+
+        <div class="form__signup hide">
+            <div class="form-wrapper">
+                <h1 class="display-1">Get on Board</h1>
+
+                <form action="">
+                    <input class="input" type="text" id="name" name="name" placeholder="Name" required>
+                    <input class="input" type="email" id="email" name="email" placeholder="Email" required>
+                    <input class="input" type="enter-password" id="enter-password" name="enter-password" placeholder="Enter Password" required>
+                    <input class="input" type="confirm-password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                    <div class="display-3 policy">By creating an account, you agree to the Terms and Use and Private Policy</div>
+                    <button class="btn-signup" type="submit">Sign up</button>
+                </form>
+            </div>
+         
+            <h3 class="display-3"><a class="to-signin" href="#">I am already a member</a></h3>
+        </div>
+    </div>
 
     <script src="dist/main.js"></script>
 </body>

@@ -1,0 +1,109 @@
+@use '../utils' as *;
+
+* {
+    letter-spacing: rem(1);
+}
+
+.display-1 {
+    color: $black;
+    font-family: 'Roboto';
+    font-size: rem(46);
+    font-weight: 700;
+    margin: rem(10) 0;
+
+    @include breakpoint-down(xlarge) {
+        font-size: rem(40);
+    }
+
+    @include breakpoint-down(large) {
+        font-size: rem(36);
+    }
+
+    @include breakpoint-down(medium) {
+        text-align: center;
+        font-size: rem(30);
+        margin: 0;
+    }
+
+    @include breakpoint-down(small) {
+        text-align: center;
+        font-size: rem(26);
+    }
+}
+
+a, .display-3 {
+    color: $black;
+    font-family: 'Roboto';
+    font-size: rem(13);
+    font-weight: 400;
+    letter-spacing: 0;
+
+    @include breakpoint-down(medium) {
+        font-size: rem(12);
+    }
+
+    @include breakpoint-down(small) {
+        font-size: rem(11);
+    }
+}
+
+a {
+    color: $primary;
+}
+
+button {
+    color: #fff;
+    font-size: rem(15);
+
+    @include breakpoint-down(large) {
+        font-size: rem(14);
+    }
+
+    @include breakpoint-down(medium) {
+        font-size: rem(13);
+    }
+}
+
+.input {
+    font-size: rem(16);
+    color: $black;
+    font-weight: 400;
+}
+
+.input::placeholder {
+    color: $black;
+    font-family: 'Roboto';
+    font-size: rem(14);
+    font-weight: 400;
+    opacity: .8;
+
+    @include breakpoint-down(large) {
+        font-size: rem(13);
+    }
+
+    @include breakpoint-down(medium) {
+        font-size: rem(12);
+    }
+}
+
+.policy {
+    width: 80%;
+    padding: rem(20) rem(10);
+    text-align: center;
+    line-height: 1.5;
+
+    @include breakpoint-down(large) {
+        width: 100%;
+        padding: rem(20) rem(20);
+    }
+
+    @include breakpoint-down(medium) {
+        width: 100%;
+        padding: rem(20) rem(40);
+    }
+
+    @include breakpoint-down(small) {
+        width: 100%;
+        padding: rem(20) 0;
+    }
+}
