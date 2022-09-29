@@ -3,8 +3,9 @@
 .form {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 74%;
-    max-height: 76%;
+    height: 80%;
     background-color: #fff;
     border-radius: rem(20);
     position: relative;
@@ -51,6 +52,7 @@
         .form-wrapper {
             display: block;
             width: 100%;
+            position: relative;
 
             form {
                 position: relative;
