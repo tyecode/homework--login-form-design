@@ -4,14 +4,13 @@
     display: flex;
     flex-direction: row;
     width: 74%;
-    height: 76%;
+    max-height: 76%;
     background-color: #fff;
     border-radius: rem(20);
     position: relative;
     @include form-shadow;
 
     @include breakpoint-down(medium) {
-        height: 80%;
         height: 86%;
     }
 
