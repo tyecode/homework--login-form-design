@@ -1,24 +1,22 @@
-const sleep = m => new Promise(r => setTimeout(r, m))
+// viewport units on mobile
 
-// fix the mobile browser scale problem
+let vh = window.innerHeight * 0.01;
 
-const content = document.querySelector('#content');
-content.style.transformOrigin = 'top left';
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-window.addEventListener('resize', recalculateScale);
+window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
 
-function recalculateScale() {
-const windowHeight = window.innerHeight;
-content.style.transform = `scale(${windowHeight / content.offsetHeight})`;
-}
-
-recalculateScale();
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
 
 // fix the mobile keyboard auto resize
+
+const sleep = m => new Promise(r => setTimeout(r, m))
 
 (async () => {
 
     await sleep(() => document.querySelector("meta[name=viewport]")
-    .setAttribute("content", "height=" + screen.height * 0.9 + "px, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"), 300);
+    .setAttribute("content", "height=" + screen.height * 0.9 + "px, width=device-width, initial-scale=1"), 300);
    
 })()
