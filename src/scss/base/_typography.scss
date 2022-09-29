@@ -12,38 +12,38 @@
     margin: rem(10) 0;
 
     @include breakpoint-down(xlarge) {
-        font-size: rem(40);
+        font-size: rem(44);
     }
 
     @include breakpoint-down(large) {
-        font-size: rem(36);
+        font-size: rem(42);
     }
 
     @include breakpoint-down(medium) {
         text-align: center;
-        font-size: rem(30);
+        font-size: rem(40);
         margin: 0;
     }
 
     @include breakpoint-down(small) {
         text-align: center;
-        font-size: rem(26);
+        font-size: rem(38);
     }
 }
 
 a, .display-3 {
     color: $black;
     font-family: 'Roboto';
-    font-size: rem(13);
+    font-size: rem(14);
     font-weight: 400;
     letter-spacing: 0;
 
     @include breakpoint-down(medium) {
-        font-size: rem(12);
+        font-size: rem(13);
     }
 
     @include breakpoint-down(small) {
-        font-size: rem(11);
+        font-size: rem(12);
     }
 }
 
