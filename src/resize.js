@@ -1,3 +1,19 @@
+// Onload resize scale
+
+window.addEventListener('load', () => {
+    const content = document.querySelector('#content');
+
+    content.style.transformOrigin = 'top left';
+    window.addEventListener('resize', recalculateScale);
+
+    function recalculateScale() {
+        const windowHeight = window.innerHeight;
+        content.style.transform = `scale(${windowHeight / content.offsetHeight})`;
+    }
+    
+    recalculateScale();
+})
+
 // viewport units on mobile
 
 let vh = window.innerHeight * 0.01;

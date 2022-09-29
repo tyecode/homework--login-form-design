@@ -41,11 +41,11 @@
 
         @include breakpoint-down(medium) {
             width: 100%;
-            padding: rem(40) rem(50);
+            padding: rem(40) rem(46);
         }
 
         @include breakpoint-down(small) {
-            padding: rem(40) rem(25);
+            padding: rem(40) rem(30);
         }
 
         .form-wrapper {

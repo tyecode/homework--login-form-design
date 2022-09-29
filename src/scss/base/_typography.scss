@@ -16,18 +16,17 @@
     }
 
     @include breakpoint-down(large) {
-        font-size: rem(42);
+        font-size: rem(40);
     }
 
     @include breakpoint-down(medium) {
         text-align: center;
-        font-size: rem(40);
+        font-size: rem(38);
         margin: 0;
     }
 
     @include breakpoint-down(small) {
         text-align: center;
-        font-size: rem(38);
     }
 }
 
