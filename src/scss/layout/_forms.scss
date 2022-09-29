@@ -7,6 +7,7 @@
     height: 76%;
     background-color: #fff;
     border-radius: rem(20);
+    position: relative;
     @include form-shadow;
 
     @include breakpoint-down(medium) {
