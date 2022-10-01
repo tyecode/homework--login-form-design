@@ -19,6 +19,18 @@ window.addEventListener('load', () => {
       };
     
     document.body.style.minHeight = `${getPixels(100)}px`;
+
+    // fix the mobile keyboard auto resize
+
+    const sleep = m => new Promise(r => setTimeout(r, m))
+
+    (async () => {
+
+        await sleep(() => document.querySelector("meta[name=viewport]")
+        .setAttribute("content", "height=" + screen.height * 0.9 + "px, width=device-width, initial-scale=1"), 300);
+    
+    })()
+
 })
 
 // viewport units on mobile
@@ -29,13 +41,3 @@ window.addEventListener('resize', () => {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-// fix the mobile keyboard auto resize
-
-const sleep = m => new Promise(r => setTimeout(r, m))
-
-(async () => {
-
-    await sleep(() => document.querySelector("meta[name=viewport]")
-    .setAttribute("content", "height=" + screen.height * 0.9 + "px, width=device-width, initial-scale=1"), 300);
-   
-})()
