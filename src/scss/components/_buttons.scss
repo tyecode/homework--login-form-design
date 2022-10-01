@@ -3,7 +3,8 @@
 form {
     
     button {
-        width: rem(120);
+        position: relative;
+        width: rem(130);
         height: rem(42);
         border: none;
         background-color: $primary;
@@ -14,6 +15,6 @@ form {
     }
 
     button:hover {
-        background-color: $secondary;
+        background-color: $hover-color;
     }
 }

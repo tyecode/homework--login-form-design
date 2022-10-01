@@ -21,9 +21,15 @@
             <div class="form-wrapper">
                 <h1 class="display-1">Hello there, <br> welcome back</h1>
 
-                <form action="#">
-                    <input class="input" type="email" name="email" placeholder="Email" required>
-                    <input class="input" type="password" name="password" placeholder="Password" required>
+                <form action="#" autocomplete="off">
+                    <div class="input-wrapper">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <input class="input" type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="icon"><i class="fa-solid fa-lock"></i></div>
+                        <input class="input" type="password" name="password" placeholder="Password" minlength="8" required>
+                    </div>
                     <div class="remember-password">
                         <div class="remember-me">
                             <input class="checkbox" type="checkbox" name="remember-me" value="remember">
@@ -44,17 +50,53 @@
             <div class="form-wrapper">
                 <h1 class="display-1">Get on Board</h1>
 
-                <form action="#">
-                    <input class="input" type="text" name="name" placeholder="Name" required>
-                    <input class="input" type="email" name="email" placeholder="Email" required>
-                    <input class="input" type="enter-password" name="enter-password" placeholder="Enter Password" required>
-                    <input class="input" type="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                <form action="#" autocomplete="off">
+                    <div class="input-wrapper">
+                        <div class="icon"><i class="fa-solid fa-user"></i></div>
+                        <input class="input" type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <input class="input" type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="icon"><i class="fa-solid fa-lock"></i></div>
+                        <input class="input" type="password" name="enter-password" placeholder="Enter Password" minlength="6" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="icon"><i class="fa-solid fa-lock"></i></div>
+                        <input class="input" type="password" name="confirm-password" placeholder="Confirm Password" minlength="6" required>
+                    </div>
                     <div class="display-3 policy">By creating an account, you agree to the Terms and Use and Private Policy</div>
                     <button class="btn-signup" type="submit">Sign up</button>
                 </form>
             </div>
          
             <h3 class="display-3"><a class="to-signin" href="#">I am already a member</a></h3>
+        </div>    
+
+    </div>
+
+    <!-- Forgot password popup -->
+
+    <div class="popup forgot-password-popup hide">
+        <div class="popup__icon">
+            <img src="./src/images/forgot_password.svg" alt="forgot-password">
+        </div>
+        <div class="popup__display">
+            <h2 class="display-2">Forgot your Password?</h2>
+            <h3 class="display-3">Please enter your email below to receive your password reset instruction</h3>
+        </div>
+        <form action="#" autocomplete="off">
+            <div class="input-wrapper">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <input class="input" type="email" name="email" placeholder="Email" required>
+            </div>
+            <button>Send</button>
+        </form>
+
+        <div class="popup__close forgot-password-popup__close">
+            <i class="fa-solid fa-xmark"></i>
         </div>
     </div>
 

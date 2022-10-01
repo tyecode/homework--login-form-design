@@ -30,12 +30,29 @@
     }
 }
 
+.display-2 {
+    color: $primary;
+    font-family: 'Roboto';
+    font-size: rem(26);
+    font-weight: 500;
+
+    @include breakpoint-down(medium) {
+        font-size: rem(24);
+    }
+
+    @include breakpoint-down(small) {
+        font-size: rem(22);
+    }
+}
+
 a, .display-3 {
-    color: $black;
+    color: $light-black;
     font-family: 'Roboto';
     font-size: rem(14);
     font-weight: 400;
     letter-spacing: 0;
+    line-height: 1.5;
+    
 
     @include breakpoint-down(medium) {
         font-size: rem(13);
@@ -64,24 +81,32 @@ button {
 }
 
 .input {
-    font-size: rem(16);
+    font-size: rem(15);
     color: $black;
     font-weight: 400;
+
+    @include breakpoint-down(large) {
+        font-size: rem(14);
+    }
+
+    @include breakpoint-down(medium) {
+        font-size: rem(13);
+    }
 }
 
 .input::placeholder {
     color: $black;
     font-family: 'Roboto';
-    font-size: rem(14);
+    font-size: rem(15);
     font-weight: 400;
     opacity: .8;
 
     @include breakpoint-down(large) {
-        font-size: rem(13);
+        font-size: rem(14);
     }
 
     @include breakpoint-down(medium) {
-        font-size: rem(12);
+        font-size: rem(13);
     }
 }
 

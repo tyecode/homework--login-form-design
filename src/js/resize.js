@@ -12,6 +12,13 @@ window.addEventListener('load', () => {
     }
     
     recalculateScale();
+
+    const getPixels = (percent) => {
+        const screenHeight = window.innerHeight;
+        return (screenHeight / 100) * percent;
+      };
+    
+    document.body.style.minHeight = `${getPixels(100)}px`;
 })
 
 // viewport units on mobile
@@ -32,10 +39,3 @@ const sleep = m => new Promise(r => setTimeout(r, m))
     .setAttribute("content", "height=" + screen.height * 0.9 + "px, width=device-width, initial-scale=1"), 300);
    
 })()
-
-const getPixels = (percent) => {
-    const screenHeight = window.innerHeight;
-    return (screenHeight / 100) * percent;
-  };
-
-document.body.style.minHeight = `${getPixels(100)}px`;

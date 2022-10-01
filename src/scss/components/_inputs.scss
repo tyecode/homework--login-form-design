@@ -1,0 +1,50 @@
+@use '../utils' as *;
+
+form {
+    display: block;
+
+    .input-wrapper {
+        width: 100%;
+        color: $primary;
+        font-size: rem(16);
+        position: relative;
+
+        .icon {
+            width: rem(20);
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: rem(5);
+            transform: translateY(-50%);
+            z-index: 99;
+        }
+    }
+    
+    .input {
+        width: 100%;
+        height: rem(40);
+        margin: rem(4) 0;
+        outline: none;
+        border: none;
+        border-bottom: $primary solid rem(2);
+        padding-left: rem(32);
+    }
+
+    .input:-webkit-autofill,
+    .input:-webkit-autofill:hover,
+    .input:-webkit-autofill:focus,
+    .input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        -webkit-text-fill-color: $black !important;
+    }
+
+    .input::selection,
+    .input:-webkit-autofill::selection,
+    .input:-webkit-autofill::selection,
+    .input:-webkit-autofill::selection,
+    .input:-webkit-autofill:active::selection {
+        color: #fff;
+        background-color: $primary;
+        -webkit-text-fill-color: #fff !important;
+    }
+}
