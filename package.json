@@ -7,10 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp"
   },
-  "keywords": ["loginform", "loginpage"],
+  "keywords": [
+    "loginform",
+    "loginpage"
+  ],
   "author": "Sengphachanh Chanthavong",
   "license": "MIT",
   "devDependencies": {
+    "@hint/configuration-web-recommended": "^8.2.15",
     "autoprefixer": "^10.4.7",
     "browser-sync": "^2.27.10",
     "cssnano": "^5.1.12",
@@ -19,6 +23,11 @@
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",
+    "hint": "^7.1.2",
     "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "@hint/connector-jsdom": "^4.1.23",
+    "@hint/hint-x-content-type-options": "^4.0.18"
   }
 }
