@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
         return (screenHeight / 100) * percent;
       };
     
-    document.body.style.minHeight = `${getPixels(100)}px`;
+    document.body.style.minHeight = `${getPixels(80)}px`;
 
     // fix the mobile keyboard auto resize
 
