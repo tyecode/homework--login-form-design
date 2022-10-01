@@ -37,12 +37,12 @@
 
         @include breakpoint-down(large) {
             width: 70%;
-            padding: rem(40) rem(50);
+            padding: rem(40) rem(40);
         }
 
         @include breakpoint-down(medium) {
             width: 100%;
-            padding: rem(40) rem(46);
+            padding: rem(40) rem(35);
         }
 
         @include breakpoint-down(small) {
